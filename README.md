@@ -1,7 +1,4 @@
-
-* This is the README file
-
-_hello_ *test*
+# My playground for github pages. Perhaps eventually a repository of various notes of interest.
 
 Licence
 -------
