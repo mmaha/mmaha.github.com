@@ -1,4 +1,5 @@
-# My playground for github pages. Perhaps eventually a repository of various notes of interest.
+# my playground for github pages
+Eventually, a repository of various notes of interest...
 
 Licence
 -------
