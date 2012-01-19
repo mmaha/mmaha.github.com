@@ -2,15 +2,10 @@
 layout: base
 title: Notes on stuff
 ---
-    {% for posts in site.posts %}
-      <div id="container">
-        <div class="entry-content">
-          <h2 class="clear">
-            <a href="{{ post.url }}/" title="{{ post.title }}">
-              {{ post.title }}
-            </a>
-          </h2>
-        </div> <!-- /.entry-content -->
-      </div> <!-- /#container -->
+    <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
+    </ul>
+
     {% include footer.html %}
