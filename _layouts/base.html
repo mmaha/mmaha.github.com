@@ -44,11 +44,12 @@
 </head>
 
 <body>
-    <div class="page-header">
-        <h1>{{ page.title }} <small>hopefully useful.</small></h1>
+    <div class="hero-unit">
+        <h1>{{ page.title }}<h1>
+        <p>hopefully useful notes on various items of interest</p>
     </div>
-
-    <div id="container">
+    <hr>
+    <div class="container">
       {{ content }}
       {% include footer.html %}
     </div>
