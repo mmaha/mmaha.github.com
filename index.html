@@ -4,8 +4,13 @@ title: Notes on stuff
 ---
     <ul class="posts">
         {% for post in site.posts %}
+<div class="row">
+<div class="span10 offset3">
             <li>
                 <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
+          </div>
+        </div>
+
         {% endfor %}
     </ul>
