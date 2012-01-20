@@ -2,20 +2,23 @@
 layout: base
 ---
 <div class="row">
-<div class="span10 offset3">
-  
-<div id="post">
-  <p>{{ content }}</p>
+  <div class="span10 offset3">
+   <div class="post">
+     <p>{{ content }}</p>
+   </div>
+  </div>
 </div>
-</div>
-</div>
+<hr>
 
-
-<div id="related">
+<div class="row">
+  <div class="span10 offset3">
+<div class="well">
   <h3>Related Posts</h3>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+</div>
+  </div>
 </div>
